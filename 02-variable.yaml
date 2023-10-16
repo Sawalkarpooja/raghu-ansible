@@ -1,0 +1,18 @@
+---
+- name: declaring the variables
+  hosts: all
+  connection: localhost
+  vars:
+    URL: play.example.com
+  tasks:
+    - name: printing the variable
+      ansible.builtin.debug:
+        - msg: URL == {{URL}}
+
+
+
+
+
+
+
+
