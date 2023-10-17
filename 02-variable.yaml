@@ -6,7 +6,7 @@
   tasks:
     - name : printing the va
       ansible.builtin.debug:
-        msg: "URL == {{URL}}"
+        msg: URL == {{URL}}
 
 
 
