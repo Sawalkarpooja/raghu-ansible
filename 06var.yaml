@@ -4,4 +4,4 @@
   tasks:
     - name: access the variable
       ansible.builtin.debug:
-         msg: URL == {{URL}}
+         msg: "URL == {{URL}}"
