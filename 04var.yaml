@@ -2,8 +2,8 @@
   hosts: all
   connection: local
   tasks:
-    - name: printing the variable
-      ansible.builtin.debug:
+     - name: printing
+       ansible.builtin.debug:
        - msg: "URL == {{URL}}"
-      vars:
+       vars:
         URL: task.example.com
