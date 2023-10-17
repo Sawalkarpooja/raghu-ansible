@@ -1,0 +1,9 @@
+- name: Declaring variables at the play level from another file
+  hosts: all
+  connection: local
+  vars_files:
+    - var.yml
+  tasks:
+    name: printing the variable
+    ansible.builtin.debug:
+      msg: URL == {{URL}}
