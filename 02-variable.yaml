@@ -4,7 +4,7 @@
   connection: local
   vars:
     URL: play.example.com
-  task:
+  tasks:
    - name : printing the va
      ansible.builtin.debug:
       - msg: URL == {{URL}}
