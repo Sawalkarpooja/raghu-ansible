@@ -1,0 +1,9 @@
+- name: declaring the variables at task level
+  hosts: all
+  connection: local
+  tasks:
+    - name: printing the variable
+      ansible.builtin.debug:
+        - msg: URL == {{URL}}
+      vars:
+          URL: play.example.com
