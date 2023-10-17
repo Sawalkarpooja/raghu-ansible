@@ -5,9 +5,9 @@
   vars:
     URL: play.example.com
   tasks:
-    - name : printing the va
-      ansible.builtin.debug:
-        - msg: URL == {{URL}}
+   - name : printing the va
+     ansible.builtin.debug:
+      - msg: URL == {{URL}}
 
 
 - name: Declaring variables at the play level from another file
