@@ -1,0 +1,7 @@
+- name: declaring variables from inventory file
+  hosts: all
+  connection: local
+  tasks:
+    - name: access the variable
+      ansible.builtin.debug:
+        - msg: URL == {{URL}}
