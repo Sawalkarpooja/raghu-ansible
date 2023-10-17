@@ -4,6 +4,6 @@
   vars_files:
     - var.yml
   tasks:
-    name: printing the variable
-    ansible.builtin.debug:
-      msg: "URL == {{URL}}"
+    - name: printing the variab
+      ansible.builtin.debug:
+       msg: "URL == {{URL}}"
