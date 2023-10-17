@@ -4,4 +4,4 @@
   tasks:
     - name: access a fact
       ansible.builtin.debug:
-        msg: "Ansible Host Name == {{ ansible_fqdn }}"
+        msg: Ansible Host Name == {{ ansible_fqdn }}
