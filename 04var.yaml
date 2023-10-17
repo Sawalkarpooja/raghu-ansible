@@ -4,6 +4,6 @@
   tasks:
     - name: printing the variable
       ansible.builtin.debug:
-        - msg: URL == {{URL}}
+        - msg: "URL == {{URL}}"
       vars:
         URL: play.example.com
